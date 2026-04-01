@@ -3,279 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PIN8 Prime Spine System | Funder Access</title>
+    <title>PIN8 Prime Spine System | Client Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="logo-bg">PIN8</div>
     <div id="watermark"></div>
 
-    <!-- PAGE 1: EXECUTIVE PREVIEW -->
-    <div id="page-1" class="page-container">
-        <div class="executive-preview">
+    <div class="page-container">
+        <!-- HERO -->
+        <div class="hero-section">
             <h1 class="gold-text">PIN8 PRIME SPINE SYSTEM</h1>
-            <p class="subtitle">Premium Business Management • Sovereign Infrastructure</p>
-            
-            <div class="dashboard-preview">
-                <h2 class="section-heading gold-text">Executive Intelligence Dashboard</h2>
-                <div class="preview-grid">
-                    <div class="preview-card">
-                        <p class="preview-label">Active MSMEs</p>
-                        <p class="preview-value">10,000+</p>
-                        <p class="preview-sub">Philippines Market</p>
-                    </div>
-                    <div class="preview-card">
-                        <p class="preview-label">Ecosystem Revenue</p>
-                        <p class="preview-value">₱3.69B</p>
-                        <p class="preview-sub">Projected Year 3</p>
-                    </div>
-                    <div class="preview-card">
-                        <p class="preview-label">Funder Share</p>
-                        <p class="preview-value">7.38%</p>
-                        <p class="preview-sub">Perpetual Royalty</p>
-                    </div>
-                    <div class="preview-card">
-                        <p class="preview-label">Yield Horizon</p>
-                        <p class="preview-value">10 Years</p>
-                        <p class="preview-sub">Generational Wealth</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="system-capabilities">
-                <h3 class="gold-text">System Capabilities</h3>
-                <div class="capabilities-grid">
-                    <div class="capability-item">
-                        <span class="cap-icon">📊</span>
-                        <h4>Real-Time Intelligence</h4>
-                        <p>Live business metrics across all MSMEs</p>
-                    </div>
-                    <div class="capability-item">
-                        <span class="cap-icon">🔗</span>
-                        <h4>Unified Infrastructure</h4>
-                        <p>One system • All operations • Zero fragmentation</p>
-                    </div>
-                    <div class="capability-item">
-                        <span class="cap-icon">🔐</span>
-                        <h4>Sovereign Data</h4>
-                        <p>100% owned by businesses • Not rented</p>
-                    </div>
-                    <div class="capability-item">
-                        <span class="cap-icon">📈</span>
-                        <h4>Scalable Architecture</h4>
-                        <p>Built for 10K+ MSMEs • Ready for expansion</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="registration-section">
-                <h2 class="section-heading">Register for Funder Briefing</h2>
-                <p class="reg-subtitle">Exclusive access for qualified founding partners</p>
-                
-                <input type="text" id="nickname" placeholder="Nickname (e.g., Dave)" />
-                <input type="email" id="email" placeholder="Email Address" />
-                <input type="tel" id="phone" placeholder="Phone / WhatsApp" />
-                
-                <div class="permission-box">
-                    <label class="checkbox-container">
-                        <input type="checkbox" id="permissionCheck" />
-                        <p>✅ I am interested to learn more about PIN8 FUNDER opportunity</p>
-                    </label>
-                </div>
-
-                <input type="password" id="accessCode" placeholder="Access Code" />
-                <p class="hint">Access Code: YIELD369</p>
-
-                <button onclick="enterFunderAccess()" class="enter-btn">ACCESS FUNDER BRIEFING 🔐</button>
-                <p id="errorMsg" class="error hidden"></p>
-            </div>
+            <p class="tagline">Seamless Monitoring • Smarter Sharing • Infinite Innovation</p>
+            <p class="tagline-2">When Your Business Grows, PIN8 Grows</p>
+            <p class="subtitle">Premium Business Management • Built for Scale</p>
         </div>
-    </div>
 
-    <!-- PAGE 2: EDUCATION + YIELD -->
-    <div id="page-2" class="page-container hidden">
-        <header class="main-header">
-            <h2 id="welcomeName">Welcome</h2>
-            <button onclick="logout()" class="exit-btn">Exit</button>
-        </header>
-
-        <!-- WHAT IS PIN8 -->
-        <section class="education-section">
-            <h2 class="section-heading gold-text">What is PIN8?</h2>
-            <div class="content-box">
-                <p>PIN8 Prime Spine System is <strong>sovereign infrastructure</strong> for MSMEs—designed to liberate businesses from subscription dependency and data captivity. We don't rent systems. We help businesses <strong>own the foundation</strong>.</p>
+        <!-- VISION -->
+        <section class="content-section">
+            <h2 class="section-heading gold-text">👁️ VISION</h2>
+            <div class="vision-box">
+                <p>A Philippines where every MSME operates with complete <strong>sovereignty</strong>—owning their data, controlling their infrastructure, and participating in ecosystem wealth creation. Where businesses scale from <span class="highlight">small to big to BIGGER</span>—without losing control, without data captivity, without subscription dependency.</p>
             </div>
+        </section>
 
-            <div class="vision-mission-grid">
-                <div class="vm-card">
-                    <h3 class="gold-text">👁️ VISION</h3>
-                    <p>A Philippines where every MSME operates with complete sovereignty—owning their data, controlling their infrastructure, and participating in ecosystem wealth creation.</p>
+        <!-- MISSION -->
+        <section class="content-section">
+            <h2 class="section-heading gold-text">🎯 MISSION</h2>
+            <div class="mission-box">
+                <p>To deploy sovereign infrastructure across <strong>10,000+ MSMEs</strong>—preserving 100% data ownership while creating perpetual wealth streams for founding partners. We don't rent systems. We help businesses <span class="highlight">own the foundation</span> and scale with confidence.</p>
+            </div>
+        </section>
+
+        <!-- SPINE VALUE -->
+        <section class="spine-section">
+            <h2 class="section-heading gold-text">🦴 Why a SPINE? The Foundation of Everything</h2>
+            <div class="spine-box">
+                <p class="spine-lead"><strong>In the human body, the spine is everything.</strong> Without it, you collapse. With it, you stand tall, move freely, and grow stronger.</p>
+                
+                <div class="spine-comparison">
+                    <div class="spine-card">
+                        <h4>🏗️ In Business</h4>
+                        <p>Your SPINE is your operational infrastructure. Without it, you're fragmented—data scattered, systems disconnected, decisions delayed. With it, you're unified—real-time intelligence, seamless flow, confident decisions.</p>
+                    </div>
+                    <div class="spine-card">
+                        <h4>🏗️ In Architecture</h4>
+                        <p>A building's spine (structural framework) determines how high it can rise. Weak spine = limited height. Strong spine = skyscraper. Your business is the same.</p>
+                    </div>
+                    <div class="spine-card">
+                        <h4>🏗️ In Nature</h4>
+                        <p>Vertebrates (with spines) dominate the animal kingdom. Invertebrates (without spines) are limited in size and capability. Which is your business?</p>
+                    </div>
                 </div>
-                <div class="vm-card">
-                    <h3 class="gold-text">🎯 MISSION</h3>
-                    <p>To deploy sovereign infrastructure across 10,000+ MSMEs—preserving 100% data ownership while creating perpetual wealth streams for founding partners.</p>
+                
+                <p class="spine-conclusion"><strong>PIN8 is your business SPINE.</strong> Not just another tool. Not just software. The central architecture that holds everything together, enables growth, and protects your sovereignty. <span class="highlight">From small to big to BIGGER—your spine scales with you.</span></p>
+            </div>
+        </section>
+
+        <!-- VALUE RATIOS -->
+        <section class="value-ratio-section">
+            <h2 class="section-heading gold-text">📊 What PIN8 Adds to Your Business</h2>
+            <div class="ratio-grid">
+                <div class="ratio-card">
+                    <div class="ratio-icon">💰</div>
+                    <h3>SAVINGS</h3>
+                    <p class="ratio-value">30-50%</p>
+                    <p class="ratio-desc">Operational cost reduction through automation, eliminated redundancies, and unified systems</p>
                 </div>
-                <div class="vm-card">
-                    <h3 class="gold-text">⚡ EXECUTION</h3>
-                    <p>Day 75-90 Go-Live Protocol • Phase 1 (Foundation/Growth/Sustainability) • Phase 2 (Scale/Integration) • Phase 3 (Ecosystem/Expansion)</p>
+                <div class="ratio-card">
+                    <div class="ratio-icon">📈</div>
+                    <h3>INVESTMENT</h3>
+                    <p class="ratio-value">1:5 ROI</p>
+                    <p class="ratio-desc">For every ₱1 invested, expect ₱5 return within 18-24 months through efficiency + scale</p>
+                </div>
+                <div class="ratio-card">
+                    <div class="ratio-icon">💎</div>
+                    <h3>VALUE ADDED</h3>
+                    <p class="ratio-value">3-5X</p>
+                    <p class="ratio-desc">Business valuation increase through real-time intelligence, scalability, and sovereignty</p>
                 </div>
             </div>
         </section>
 
-        <!-- FUNDER'S ROLE -->
-        <section class="funder-role-section">
-            <h2 class="section-heading gold-text">Funder's Role in Speedrun Execution</h2>
-            <div class="content-box">
-                <p>Founding Funders are not passive investors. You are <strong>infrastructure partners</strong>—activating the capital foundation that enables MSME sovereignty at scale.</p>
-                <ul class="role-list">
-                    <li>✅ Capital deployment activates the ecosystem foundation</li>
-                    <li>✅ Perpetual share of ecosystem revenue/royalty streams</li>
-                    <li>✅ Sovereignty guards protect your participation (confidentiality • non-circumvention)</li>
-                    <li>✅ No equity dilution • No operational burden • Pure infrastructure partnership</li>
-                </ul>
+        <!-- CONGRUENCY -->
+        <section class="congruency-section">
+            <h2 class="section-heading gold-text">Why Congruency Matters</h2>
+            <div class="congruency-box">
+                <p class="lead-text"><strong>"I already have 6 out of 9 systems. Why pay for the full PIN8?"</strong></p>
+                <p>Great question. Here's the truth: <strong>Disconnected systems create fragmentation.</strong></p>
+                <div class="comparison-grid">
+                    <div class="comparison-card partial">
+                        <h4>❌ Partial Systems (6/9)</h4>
+                        <ul>
+                            <li>Data silos (systems don't talk)</li>
+                            <li>Manual workarounds (export/import)</li>
+                            <li>Delayed insights (lag time)</li>
+                            <li>Higher costs (multiple subscriptions)</li>
+                            <li>Vendor lock-in (can't exit easily)</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card congruent">
+                        <h4>✅ PIN8 Congruent System (9/9)</h4>
+                        <ul>
+                            <li>Unified data (one source of truth)</li>
+                            <li>Automated flow (seamless integration)</li>
+                            <li>Real-time intelligence (instant decisions)</li>
+                            <li>One-time activation (own forever)</li>
+                            <li>You own 100% (no lock-in)</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="congruency-note"><strong>Congruency isn't optional—it's essential.</strong> PIN8's 9 Core Systems work as ONE unified architecture. Foundation enables Growth. Growth feeds Sustainability. This is why partial systems fail and congruent systems scale.</p>
             </div>
         </section>
 
-        <!-- CAPITAL DEPLOYMENT vs INVESTMENT -->
-        <section class="distinction-section">
-            <h2 class="section-heading gold-text">Capital Deployment ≠ Traditional Investment</h2>
-            <div class="comparison-grid">
-                <div class="comparison-card traditional">
-                    <h4>❌ Traditional Investment</h4>
+        <!-- SCALE MESSAGE -->
+        <section class="scale-section">
+            <h2 class="section-heading gold-text">From Small to Big to BIGGER</h2>
+            <div class="scale-box">
+                <p>PIN8 isn't built for where you are <em>now</em>. It's built for where you're <em>going</em>.</p>
+                <div class="scale-stages">
+                    <div class="stage">
+                        <h4>🌱 Small</h4>
+                        <p>1-2 branches • Basic operations • You're in control</p>
+                    </div>
+                    <div class="stage-arrow">→</div>
+                    <div class="stage">
+                        <h4>🚀 Big</h4>
+                        <p>5-10 branches • Multi-team • Systems keep you sane</p>
+                    </div>
+                    <div class="stage-arrow">→</div>
+                    <div class="stage">
+                        <h4>🏆 BIGGER</h4>
+                        <p>20+ branches • Ecosystem player • PIN8 scales infinitely</p>
+                    </div>
+                </div>
+                <p class="scale-message"><strong>Don't build for today. Build for tomorrow.</strong> PIN8 is your growth infrastructure.</p>
+            </div>
+        </section>
+
+        <!-- FAQs -->
+        <section class="faq-section">
+            <h2 class="section-heading gold-text">❓ Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What if we have our own tech guy/tech team? Why would we get PIN8?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Your tech team is valuable.</strong> PIN8 doesn't replace them—it <strong>empowers</strong> them.</p>
                     <ul>
-                        <li>Equity dilution (you own shares)</li>
-                        <li>Exit via sale/IPO (uncertain)</li>
-                        <li>Dividends (discretionary)</li>
-                        <li>Voting rights (operational burden)</li>
-                        <li>Tax on dividends (double taxation)</li>
+                        <li>✅ Your tech team focuses on <strong>innovation</strong> (not maintenance)</li>
+                        <li>✅ PIN8 handles <strong>infrastructure</strong> (updates • security • integration)</li>
+                        <li>✅ You own <strong>100% of data</strong> (your team controls access)</li>
+                        <li>✅ No <strong>reinventing the wheel</strong> (PIN8 is pre-built • pre-tested • production-ready)</li>
                     </ul>
+                    <p><strong>Think of it this way:</strong> Your tech team builds competitive advantage. PIN8 provides the foundation. Together, you scale faster.</p>
                 </div>
-                <div class="comparison-card pin8">
-                    <h4>✅ PIN8 Capital Deployment</h4>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Isn't this the same as using free AI tools online? Why would we use PIN8?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Free AI tools are powerful—but they're not sovereign infrastructure.</strong></p>
+                    <div class="faq-comparison">
+                        <div class="faq-sub-card">
+                            <h4>❌ Free AI Tools</h4>
+                            <ul>
+                                <li>They own your data (training material)</li>
+                                <li>No integration (standalone tools)</li>
+                                <li>No business logic (just chat)</li>
+                                <li>No ownership (can shut down anytime)</li>
+                                <li>No support (community only)</li>
+                            </ul>
+                        </div>
+                        <div class="faq-sub-card">
+                            <h4>✅ PIN8 System</h4>
+                            <ul>
+                                <li>You own 100% (we're processors only)</li>
+                                <li>Full integration (unified platform)</li>
+                                <li>Business-specific (MSME operations)</li>
+                                <li>Perpetual rights (own forever)</li>
+                                <li>Dedicated support (alignment • training • go-live)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p><strong>AI is a tool. PIN8 is infrastructure.</strong> Use both—but own the foundation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>I don't need all the systems. I already have 6 out of 9. Why pay in full?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p>See "Why Congruency Matters" section above. <strong>Short answer:</strong> Partial systems = fragmentation. Full congruency = scale.</p>
+                    <p><strong>Long answer:</strong> You're not paying for 9 separate systems. You're paying for <strong>ONE congruent architecture</strong> where Foundation enables Growth, Growth feeds Sustainability, and Sustainability informs Foundation. This is why disconnected tools fail and congruent systems dominate.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How long does it take to deploy PIN8?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Minimum 75-90 Days Go-Live Protocol:</strong></p>
                     <ul>
-                        <li>Revenue/Royalty share (no equity)</li>
-                        <li>Perpetual quarterly distributions</li>
-                        <li>Tier 1 from GROSS (contractual right)</li>
-                        <li>No operational burden (sovereign guards)</li>
-                        <li>Tax-efficient structure (consult advisor)</li>
+                        <li><strong>Week 1-2:</strong> Written Handshake • Alignment Call • Demo Access • Discovery</li>
+                        <li><strong>Week 3-8:</strong> Custom Development • Integration • Data Migration • Team Training</li>
+                        <li><strong>Week 9-12:</strong> Testing • UAT • Sovereignty Guard Activation</li>
+                        <li><strong>Day 75-90:</strong> 🚀 GO-LIVE (depending on size & complexity)</li>
                     </ul>
+                    <p class="timeline-note"><strong>Why 75-90 days?</strong> Small businesses: 75 days. Medium complexity: 90 days. Large enterprises: Custom timeline. <em>We build it right, not fast.</em></p>
                 </div>
             </div>
-        </section>
 
-        <!-- FIRST MOVER ADVANTAGE -->
-        <section class="fomo-section">
-            <h2 class="section-heading gold-text">First Mover Advantage</h2>
-            <div class="content-box highlight">
-                <p class="fomo-text">🎯 <strong>Execution Plan 01: 10,000 MSMEs in the Philippines</strong></p>
-                <p>Founding Funders enter at <strong>ground floor valuation</strong>—before scale, before mainstream adoption, before competition emerges.</p>
-                <ul class="fomo-list">
-                    <li>🔥 Limited founding circle (first 3-5 funders)</li>
-                    <li>🔥 Highest yield percentage (7.38% founding rate)</li>
-                    <li>🔥 Perpetual rights (36-month minimum • lifetime potential)</li>
-                    <li>🔥 Ecosystem governance input (strategic direction)</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- ROI PROJECTIONS -->
-        <section class="roi-section">
-            <h2 class="section-heading gold-text">Potential Yield Projections</h2>
-            <p class="section-subtitle">Conservative estimates based on MSME activation rates</p>
-            
-            <div class="roi-grid">
-                <div class="roi-card">
-                    <p class="roi-year">Year 1</p>
-                    <p class="roi-msme">100-200 MSMEs</p>
-                    <p class="roi-yield">₱250K - ₱500K</p>
-                    <p class="roi-note">Foundation Phase</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Can PIN8 integrate with our existing tools (QuickBooks, Xero, etc.)?</span>
+                    <span class="toggle-icon">▼</span>
                 </div>
-                <div class="roi-card">
-                    <p class="roi-year">Year 3</p>
-                    <p class="roi-msme">1,000-2,000 MSMEs</p>
-                    <p class="roi-yield">₱2.5M - ₱5M</p>
-                    <p class="roi-note">Scale Phase</p>
-                </div>
-                <div class="roi-card">
-                    <p class="roi-year">Year 5</p>
-                    <p class="roi-msme">3,000-5,000 MSMEs</p>
-                    <p class="roi-yield">₱7.5M - ₱12.5M</p>
-                    <p class="roi-note">Dominance Phase</p>
-                </div>
-                <div class="roi-card">
-                    <p class="roi-year">Year 7</p>
-                    <p class="roi-msme">6,000-8,000 MSMEs</p>
-                    <p class="roi-yield">₱15M - ₱20M</p>
-                    <p class="roi-note">Ecosystem Phase</p>
-                </div>
-                <div class="roi-card highlight">
-                    <p class="roi-year">Year 10</p>
-                    <p class="roi-msme">10,000+ MSMEs</p>
-                    <p class="roi-yield">₱25M - ₱37M+</p>
-                    <p class="roi-note">Generational Wealth</p>
+                <div class="faq-answer hidden">
+                    <p><strong>Yes.</strong> PIN8 uses API-first architecture. We integrate with:</p>
+                    <ul>
+                        <li>✅ Accounting: QuickBooks • Xero • Wave</li>
+                        <li>✅ Payment: GCash • PayMaya • Stripe</li>
+                        <li>✅ E-commerce: Shopify • WooCommerce • Lazada</li>
+                        <li>✅ Custom: Your existing tools (via API)</li>
+                    </ul>
+                    <p>PIN8 doesn't replace—it <strong>enhances and sovereignizes</strong>. Your tools become more powerful while you own the data.</p>
                 </div>
             </div>
-            <p class="disclaimer">* Projections based on conservative MSME activation. Actual yield depends on execution speed • market adoption • ecosystem growth. Full details revealed after alignment call.</p>
-        </section>
 
-        <!-- RECURRING SHARING INCOME -->
-        <section class="recurring-section">
-            <h2 class="section-heading gold-text">Recurring Sharing Income Structure</h2>
-            <div class="content-box">
-                <div class="income-structure">
-                    <div class="income-tier">
-                        <h4>💎 3.69% Revenue Share</h4>
-                        <p>Tier 1 from GROSS revenue • Quarterly distributions • Perpetual (36-month minimum)</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is my data really private and secure?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Absolutely.</strong> This is non-negotiable:</p>
+                    <ul>
+                        <li>🔐 <strong>You own 100% of data</strong> (we're processors, not owners)</li>
+                        <li>🔐 <strong>End-to-end encryption</strong> (military-grade security)</li>
+                        <li>🔐 <strong>Isolated compartments</strong> (your data never mixes with others)</li>
+                        <li>🔐 <strong>Perpetual confidentiality</strong> (encoded in covenant agreements)</li>
+                        <li>🔐 <strong>Sovereignty guards</strong> (legal • technical • operational)</li>
+                    </ul>
+                    <p>Your data never leaves your control. Ever.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What happens if we want to exit? Are we locked in?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>No lock-in. Ever.</strong></p>
+                    <ul>
+                        <li>✅ You own 100% of data (export anytime)</li>
+                        <li>✅ Perpetual rights (no subscription = no cancellation)</li>
+                        <li>✅ Defined exit protocol (clear • fair • documented)</li>
+                        <li>✅ No hostage situations (we're partners, not captors)</li>
+                    </ul>
+                    <p><strong>Sovereignty means freedom.</strong> You can leave anytime. (Though we're confident you won't want to.)</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What kind of support do we get after go-live?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Ongoing partnership:</strong></p>
+                    <ul>
+                        <li>✅ 90-day post-launch support (critical period)</li>
+                        <li>✅ Quarterly check-ins (optimization • updates)</li>
+                        <li>✅ Priority access (direct line to PIN8 team)</li>
+                        <li>✅ System updates (security • features • improvements)</li>
+                        <li>✅ Training resources (documentation • videos • workshops)</li>
+                    </ul>
+                    <p>We're not a vendor. We're your <strong>infrastructure partner</strong>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>How is pricing structured? Is it subscription-based?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>When Your Business Grows, PIN8 Grows.</strong></p>
+                    <p>PIN8 uses a <strong>value-aligned pricing model</strong> that rewards growth:</p>
+                    
+                    <div class="pricing-structure">
+                        <div class="pricing-phase">
+                            <h4>🚀 One-Time Setup</h4>
+                            <ul>
+                                <li><strong>Development Cost Fee:</strong> Custom architecture design</li>
+                                <li><strong>Implementation Fee:</strong> Integration • Data migration • Training</li>
+                                <li><strong>Day 75-90 Go-Live:</strong> Testing • Sovereignty guard activation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="pricing-phase">
+                            <h4>📈 When You Grow, PIN8 Grows</h4>
+                            <ul>
+                                <li><strong>Subscription Fee:</strong> Not per user (unlimited team members)</li>
+                                <li><strong>PULSE Fee:</strong> Transaction-based (way lower than normal MDRs)</li>
+                                <li><strong>Special Features:</strong> Add-on costs (only what you need)</li>
+                                <li><strong>Tiered Pricing:</strong> Scales with your revenue, not your headcount</li>
+                            </ul>
+                            <p class="pricing-note">✅ <strong>You grow more = You keep more.</strong> PIN8 rewards scale, not penalizes it.</p>
+                        </div>
                     </div>
-                    <div class="income-tier">
-                        <h4>💎 3.69% Royalty Share</h4>
-                        <p>Ecosystem licensing • Integration fees • Partner activations • Perpetual rights</p>
-                    </div>
-                    <div class="income-total">
-                        <h3 class="gold-text">Total: 7.38% Founding Funder Share</h3>
-                        <p>Contractual right • Sovereign guards • No equity dilution</p>
-                    </div>
+                    
+                    <p><strong>Specific pricing</strong> is revealed after alignment call (contextual based on business size • complexity • branches).</p>
                 </div>
             </div>
-        </section>
 
-        <!-- PROFESSIONAL CLOSING -->
-        <section class="closing-section">
-            <h2 class="section-heading gold-text">Ready to Explore Further?</h2>
-            <div class="content-box highlight">
-                <p class="closing-text">This briefing is an <strong>introduction</strong>—not a commitment. The next step is a confidential alignment call where we reveal:</p>
-                <ul class="closing-list">
-                    <li>✅ Full capital deployment structure (₱3.69M)</li>
-                    <li>✅ Legal framework (covenant agreements)</li>
-                    <li>✅ Sovereignty guards (confidentiality • non-circumvention)</li>
-                    <li>✅ Distribution mechanics (quarterly • Tier 1 from GROSS)</li>
-                    <li>✅ Exit protocol (defined rights • no hostage situations)</li>
-                </ul>
-                <p class="closing-cta">If this resonates, request an alignment call. No pressure. No pitch. Pure clarity.</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What if we're not ready yet? Can we wait?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>You can wait. But here's what waiting costs:</strong></p>
+                    <ul>
+                        <li>⏰ Every day without PIN8 = data loss • inefficiency • missed opportunities</li>
+                        <li>⏰ Competitors adopting sovereign infrastructure gain advantage</li>
+                        <li>⏰ Scaling without foundation = chaos • fragmentation • higher costs later</li>
+                    </ul>
+                    <p><strong>Best time to plant a tree:</strong> 20 years ago.<br><strong>Second-best time:</strong> Today.</p>
+                    <p>Ready when you are. We'll be here.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>Can we start with one branch and add more later?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Absolutely.</strong> PIN8 is designed for growth:</p>
+                    <ul>
+                        <li>✅ Start with 1 branch (pilot • test • optimize)</li>
+                        <li>✅ Add branches as you scale (seamless • no re-architecture)</li>
+                        <li>✅ Multi-branch from day one (if you're ready)</li>
+                    </ul>
+                    <p><strong>PIN8 scales with you.</strong> From small to big to BIGGER.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <span>What's the next step if we're interested?</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="faq-answer hidden">
+                    <p><strong>Simple. No pressure. Pure clarity.</strong></p>
+                    <ol>
+                        <li>Fill out the form below (contact • pain points • needs • challenges)</li>
+                        <li>We reach out within 48 hours (alignment call scheduling)</li>
+                        <li>30-45 min alignment call (understand your context • answer questions)</li>
+                        <li>Written Handshake (NDA • terms • clarity)</li>
+                        <li>Day 75-90 Go-Live Protocol begins</li>
+                    </ol>
+                    <p><strong>Not a commitment. A conversation.</strong> Let's talk.</p>
+                </div>
             </div>
         </section>
 
         <!-- LEAD CAPTURE -->
-        <section class="lead-capture-section">
-            <h2 class="section-heading gold-text">📬 Request Funder Alignment Call</h2>
-            <p class="section-subtitle">Share your details. We'll reach out within 48 hours to schedule.</p>
+        <section class="lead-section">
+            <h2 class="section-heading gold-text">🎯 Yes, I'm Interested</h2>
+            <p class="section-subtitle">Let's start the conversation. No pressure. Pure exploration.</p>
             
             <div class="lead-form">
-                <input type="text" id="leadName" placeholder="Full Name" />
-                <input type="email" id="leadEmail" placeholder="Email Address" />
-                <input type="tel" id="leadPhone" placeholder="Phone / WhatsApp" />
-                <input type="text" id="leadCompany" placeholder="Company / Organization" />
-                <textarea id="leadQuestions" placeholder="❓ Your Questions • Concerns • Clarifications"></textarea>
+                <div class="form-group">
+                    <h3 class="form-section-title">Contact Information</h3>
+                    <input type="text" id="leadName" placeholder="Full Name *" />
+                    <input type="email" id="leadEmail" placeholder="Email Address *" />
+                    <input type="tel" id="leadPhone" placeholder="Phone / WhatsApp" />
+                    <input type="text" id="leadBusiness" placeholder="Business Name" />
+                </div>
+
+                <div class="form-group">
+                    <h3 class="form-section-title">Tell Us About Your Business</h3>
+                    <textarea id="leadPainPoints" placeholder="💭 Your Pain Points (What's frustrating you right now?)"></textarea>
+                    <textarea id="leadNeeds" placeholder="🎯 Your Needs (What would make your life easier?)"></textarea>
+                    <textarea id="leadChallenges" placeholder="🚧 Your Challenges (What's blocking your growth?)"></textarea>
+                    <textarea id="leadInquiry" placeholder="❓ Special Inquiry (Any specific questions or concerns?)"></textarea>
+                </div>
                 
                 <button onclick="submitLead()" class="submit-btn">REQUEST ALIGNMENT CALL</button>
-                <p class="form-hint">Confidential • No obligation • Pure exploration</p>
+                <p class="form-hint">This is a conversation, not a commitment. We'll reach out within 48 hours.</p>
             </div>
         </section>
 
         <footer class="main-footer">
             <p class="gold-text">PIN8 PRIME SPINE SYSTEM</p>
-            <p>Funder Briefing • Confidential</p>
-            <p class="small">© 2026 PIN8 Ecosystem • Protected by Sovereignty Guards 🔐</p>
+            <p>Seamless Monitoring • Smarter Sharing • Infinite Innovation</p>
+            <p class="small">© 2026 PIN8 Ecosystem • Confidential</p>
+            <p class="small">Protected by PIN8 Sovereignty Guards 🔐</p>
         </footer>
     </div>
 
