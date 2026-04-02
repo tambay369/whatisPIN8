@@ -1,44 +1,61 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #000000;
     color: #FFFFFF;
     line-height: 1.6;
     overflow-x: hidden;
 }
 
-#logo-bg {
+/* FLOATING WATERMARK LOGO */
+#logo-watermark {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Playfair Display', serif;
-    font-size: 25rem;
-    font-weight: bold;
-    color: rgba(212, 175, 55, 0.02);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28rem;
+    font-weight: 700;
+    color: rgba(212, 175, 55, 0.03);
     pointer-events: none;
     z-index: 0;
-    animation: breathe 10s ease-in-out infinite;
+    animation: float 15s ease-in-out infinite;
+    letter-spacing: 2rem;
 }
 
-@keyframes breathe {
-    0%, 100% { opacity: 0.01; transform: translate(-50%, -50%) scale(1); }
-    50% { opacity: 0.05; transform: translate(-50%, -50%) scale(1.15); }
+@keyframes float {
+    0%, 100% { 
+        opacity: 0.02; 
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    }
+    25% { 
+        opacity: 0.04; 
+        transform: translate(-52%, -48%) scale(1.05) rotate(2deg);
+    }
+    50% { 
+        opacity: 0.05; 
+        transform: translate(-48%, -52%) scale(1.1) rotate(0deg);
+    }
+    75% { 
+        opacity: 0.04; 
+        transform: translate(-52%, -52%) scale(1.05) rotate(-2deg);
+    }
 }
 
-#watermark {
+#watermark-text {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
-    opacity: 0.06;
+    opacity: 0.05;
     pointer-events: none;
     z-index: 9999;
     color: #D4AF37;
     font-weight: bold;
+    letter-spacing: 0.5rem;
 }
 
 .page-container {
@@ -52,8 +69,8 @@ body {
 .hidden { display: none !important; }
 .gold-text { 
     color: #D4AF37; 
-    font-family: 'Playfair Display', serif;
-    text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); 
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.25); 
 }
 
 /* HERO */
@@ -64,10 +81,11 @@ body {
 }
 
 .hero-section h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 3.5rem;
     margin-bottom: 15px;
     letter-spacing: 0.5rem;
+    font-weight: 700;
 }
 
 .tagline {
@@ -96,14 +114,15 @@ body {
 }
 
 .section-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.2rem;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 600;
 }
 
 .vision-box, .mission-box {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
     border: 2px solid #D4AF37;
     padding: 40px;
     border-radius: 12px;
@@ -123,7 +142,7 @@ body {
 }
 
 .spine-box {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
     border: 3px solid #D4AF37;
     padding: 50px;
     border-radius: 15px;
@@ -144,8 +163,8 @@ body {
 }
 
 .spine-card {
-    background: #000;
-    border: 2px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
@@ -153,13 +172,14 @@ body {
 
 .spine-card h4 {
     color: #D4AF37;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .spine-card p {
-    color: #888;
+    color: #999;
     line-height: 1.7;
     font-size: 0.95rem;
 }
@@ -187,7 +207,7 @@ body {
 }
 
 .ratio-card {
-    background: #0a0a0a;
+    background: rgba(10, 10, 10, 0.8);
     border: 2px solid #D4AF37;
     padding: 40px 30px;
     border-radius: 12px;
@@ -208,20 +228,22 @@ body {
 
 .ratio-card h3 {
     color: #D4AF37;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .ratio-value {
     color: #FFD700;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
 .ratio-desc {
-    color: #888;
+    color: #999;
     font-size: 0.95rem;
     line-height: 1.7;
 }
@@ -232,7 +254,7 @@ body {
 }
 
 .congruency-box {
-    background: #0a0a0a;
+    background: rgba(10, 10, 10, 0.8);
     border: 2px solid #D4AF37;
     padding: 45px;
     border-radius: 12px;
@@ -253,8 +275,8 @@ body {
 }
 
 .comparison-card {
-    background: #000;
-    border: 2px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
     padding: 30px;
     border-radius: 10px;
 }
@@ -262,9 +284,10 @@ body {
 .comparison-card h4 {
     margin-bottom: 20px;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
-.comparison-card.partial h4 { color: #ff4444; }
+.comparison-card.partial h4 { color: #ff6b6b; }
 .comparison-card.congruent h4 { color: #D4AF37; }
 
 .comparison-card ul {
@@ -287,7 +310,7 @@ body {
 
 .comparison-card.congruent {
     border-color: #D4AF37;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.04) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .comparison-card.congruent li { color: #D4AF37; }
@@ -308,7 +331,7 @@ body {
 }
 
 .scale-box {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
     border: 3px solid #D4AF37;
     padding: 50px;
     border-radius: 15px;
@@ -330,8 +353,8 @@ body {
 
 .stage {
     flex: 1;
-    background: #000;
-    border: 2px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
     padding: 30px 20px;
     border-radius: 10px;
     margin: 0 10px;
@@ -339,13 +362,14 @@ body {
 
 .stage h4 {
     color: #D4AF37;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .stage p {
-    color: #888;
+    color: #999;
     font-size: 0.95rem;
 }
 
@@ -368,8 +392,8 @@ body {
 }
 
 .faq-item {
-    background: #0a0a0a;
-    border: 2px solid #333;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1.5px solid #333;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -430,8 +454,8 @@ body {
 }
 
 .faq-sub-card {
-    background: #000;
-    border: 2px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
     padding: 20px;
     border-radius: 8px;
 }
@@ -439,6 +463,7 @@ body {
 .faq-sub-card h4 {
     margin-bottom: 15px;
     font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .faq-sub-card ul {
@@ -459,8 +484,8 @@ body {
 }
 
 .pricing-phase {
-    background: #000;
-    border: 2px solid #333;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1.5px solid #333;
     padding: 30px;
     border-radius: 10px;
     margin: 20px 0;
@@ -472,9 +497,10 @@ body {
 
 .pricing-phase h4 {
     color: #D4AF37;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .pricing-phase ul {
@@ -517,9 +543,9 @@ body {
 
 /* LEAD SECTION */
 .lead-section {
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(0, 0, 0, 0) 100%);
     border: 3px solid #D4AF37;
-    padding: 60px 40px;
+    padding: 60px 45px;
     border-radius: 15px;
     margin: 80px 0;
     text-align: center;
@@ -528,7 +554,7 @@ body {
 .section-subtitle {
     color: #888;
     font-size: 1.1rem;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .lead-form {
@@ -543,7 +569,7 @@ body {
 
 .form-section-title {
     color: #D4AF37;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 20px;
     border-bottom: 2px solid #D4AF37;
@@ -555,11 +581,11 @@ body {
     width: 100%;
     padding: 15px 20px;
     margin: 12px 0;
-    background: #0a0a0a;
-    border: 2px solid #D4AF37;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1.5px solid #D4AF37;
     color: #FFFFFF;
     border-radius: 6px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     transition: all 0.3s;
 }
@@ -567,7 +593,7 @@ body {
 .lead-form input:focus,
 .lead-form textarea:focus {
     outline: none;
-    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     border-color: #FFD700;
 }
 
@@ -591,19 +617,20 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
     transition: all 0.3s;
 }
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.6);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.5);
 }
 
 .form-hint {
     color: #666;
     font-size: 0.9rem;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 /* FOOTER */
@@ -614,24 +641,22 @@ body {
     border-top: 2px solid #333;
 }
 
-.main-footer p {
-    margin: 10px 0;
-}
-
-.main-footer .small {
-    font-size: 0.85rem;
+.main-footer p { margin: 10px 0; }
+.main-footer .small { 
+    font-size: 0.85rem; 
     color: #555;
 }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
+    #logo-watermark { font-size: 20rem; }
     .ratio-grid, .spine-comparison, .comparison-grid, .faq-comparison { grid-template-columns: repeat(2, 1fr); }
     .scale-stages { flex-direction: column; gap: 20px; }
     .stage-arrow { transform: rotate(90deg); }
 }
 
 @media (max-width: 768px) {
-    #logo-bg { font-size: 12rem; }
+    #logo-watermark { font-size: 15rem; }
     .hero-section h1 { font-size: 2.2rem; }
     .section-heading { font-size: 1.8rem; }
     .ratio-grid, .spine-comparison, .comparison-grid, .faq-comparison { grid-template-columns: 1fr; }
@@ -640,6 +665,7 @@ body {
 }
 
 @media (max-width: 480px) {
+    #logo-watermark { font-size: 12rem; }
     .hero-section h1 { font-size: 1.8rem; letter-spacing: 0.2rem; }
     .tagline, .tagline-2 { font-size: 1rem; }
     .section-heading { font-size: 1.5rem; }
